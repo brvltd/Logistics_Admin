@@ -13,7 +13,7 @@ function loginUser() {
 
     firebase.auth().signInWithEmailAndPassword(email,password).then(function () {
         //this function works when login successfully
-
+        alert("Login Success");
         window.location="dashboard.html";
     }).catch(function (error) {
        //this will handle error

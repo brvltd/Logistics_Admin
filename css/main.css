@@ -1,7 +1,111 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #login{
 	background-image: url(../images/truckbrv.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: auto;
     height: auto;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 10%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 26px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+	margin-left: 0;
+	width: 2px;
+  background-color: #4CAF50;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 1s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+
+  .icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 1%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 10px;
+}
 }
