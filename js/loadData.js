@@ -27,16 +27,16 @@ function gotData(data){
 		// infoResults.innerHTML="";
 		infoResults.innerHTML+=`
 		<div class="row">
-		<div class="col-sm-3">
+		<div class="col-sm-2">
 		<p>${trackN}</p>
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-2">
 		<p>${cargoName}</p>
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-2">
 		<p>${custName}</p>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-sm-1">
 		<a><i class="fa fa-edit"></i></a>
 		</div>
 		</div>`
@@ -64,16 +64,16 @@ function gotCustData(data){
 		// infoResults.innerHTML="";
 		infoCustRes.innerHTML+=`
 		<div class="row">
-		<div class="col-md-3">
+		<div class="col-md-2">
 		<p>${PhoneNumber}</p>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-2">
 		<p>${CustomerName}</p>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-2">
 		<p>${Email}</p>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-sm-1">
 		<a><i class="fa fa-edit"></i></a>
 		</div>
 		</div>`
