@@ -37,13 +37,13 @@ function gotData(data){
 		<p>${custName}</p>
 		</div>
 		<div class="col-sm-1">
-		<a><i class="fa fa-edit"></i></a>
+		<a><i class="fa fa-edit" onclick="editCargo();"></i></a>
 		</div>
 		</div>`
 	}
 }
 
-// RetrieveCCustInfos
+// RetrieveCustInfos
 function retrieveCustInfos(){
 	var database = firebase.database();
 	let ref=firebase.database().ref("Customers");
