@@ -28,13 +28,13 @@ function gotData(data){
 		infoResults.innerHTML+=`
 		<div class="row">
 		<div class="col-sm-2">
-		<p>${trackN}</p>
+		<p id="tNo">${trackN}</p>
 		</div>
 		<div class="col-sm-2">
-		<p>${cargoName}</p>
+		<p id="cName">${cargoName}</p>
 		</div>
 		<div class="col-sm-2">
-		<p>${custName}</p>
+		<p id="custNam">${custName}</p>
 		</div>
 		<div class="col-sm-1">
 		<a><i class="fa fa-edit" onclick="editCargo();"></i></a>

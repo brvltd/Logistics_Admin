@@ -167,6 +167,10 @@ function editCargo(){
     document.getElementById("main").style.marginLeft= "0";
     document.getElementById("open_btn").style.display="block";
     document.getElementById("open_btn").style.transition="all 0.3s ease";
+
+    let trackNo=document.getElementById("tNo").val;
+    console.log(trackNo);
+
     $("#cust").hide();
     $("#cargo").hide();
     $("#dashboardItems").show();
@@ -193,8 +197,13 @@ function editCargo(){
            // "<input style='max-width:50%;text-align: center;' class='form-control' type='text' onclick='addLocation();' id='location' required='required'><br><br>"+
            // "</center>"+
            "<center>"+
-           "<button style='width:50%;' class='btn btn-success' type='button' onclick='addCArgo();'><strong>Add</strong></button>"+
+           "<button' class='btn btn-success' type='button' onclick='updateCArgo();'><strong>Update</strong></button>"+
            "</center>"+
+           "<br>"+
+           "<center>"+
+           "<button' class='btn btn-danger' type='button' onclick='deleteCArgo();'><strong>Remove</strong></button>"+
+           "</center>"+
+           
            "</form>"+
            "</center>"
            );
