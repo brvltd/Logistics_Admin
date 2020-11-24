@@ -262,7 +262,7 @@ background: #fff;
 }
 
 
-@media screen and (max-height: 450px) {
+@media only screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 
@@ -282,7 +282,30 @@ background: #fff;
     font-size: 10px;
   }
 
-  #addCargoInfo{
-    font-size: small;
+#cust .row{
+  display: none;
+}
+}
+@media only screen and (max-width: 450px) {
+  #phone{
+    width: auto;
+  }
+  #cNam{
+    width: auto;
+  }
+  #em{
+    width: auto;
+  }
+  #edit{
+    width: auto;
+  }
+  #tNos{
+    width: auto;
+  }
+  #cNames{
+    width: auto;
+  }
+  #custNams{
+    width: auto;
   }
 }
