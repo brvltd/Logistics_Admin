@@ -28,16 +28,16 @@ function gotData(data){
 		infoResults.innerHTML+=`
 		<div class="row">
 		<div class="col-sm-2">
-		<p id="tNo">${trackN}</p>
+		<p style="font-size:1vw;" id="tNo">${trackN}</p>
 		</div>
 		<div class="col-sm-2">
-		<p id="cName">${cargoName}</p>
+		<p style="font-size:1vw;" id="cName">${cargoName}</p>
 		</div>
 		<div class="col-sm-2">
-		<p id="custNam">${custName}</p>
+		<p style="font-size:1vw;" id="custNam">${custName}</p>
 		</div>
 		<div class="col-sm-1">
-		<a><i class="fa fa-edit" onclick="editCargo();"></i></a>
+		<a style="font-size:1vw;"><i class="fa fa-edit" onclick="editCargo();"></i></a>
 		</div>
 		</div>`
 	}
@@ -65,16 +65,16 @@ function gotCustData(data){
 		infoCustRes.innerHTML+=`
 		<div class="row">
 		<div class="col-md-2">
-		<p>${PhoneNumber}</p>
+		<p style="font-size:1vw;">${PhoneNumber}</p>
 		</div>
 		<div class="col-md-2">
-		<p>${CustomerName}</p>
+		<p style="font-size:1vw;">${CustomerName}</p>
 		</div>
 		<div class="col-md-2">
-		<p>${Email}</p>
+		<p style="font-size:1vw;">${Email}</p>
 		</div>
 		<div class="col-sm-1">
-		<a><i class="fa fa-edit"></i></a>
+		<a style="font-size:1vw;"><i class="fa fa-edit"></i></a>
 		</div>
 		</div>`
 	}
