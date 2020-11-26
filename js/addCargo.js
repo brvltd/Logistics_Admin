@@ -17,8 +17,8 @@ function addCArgo() {
         window.location="dashboard.html";
     firebase.database().ref('Cargo/'+cargoId).set({
        TrackNo:cargoId,
-        CustomerName:cargoName,
-        CargoName:customerName
+        CustomerName:customerName,
+        CargoName:cargoName
     });
 }
 }

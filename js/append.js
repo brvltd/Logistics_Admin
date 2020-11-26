@@ -53,6 +53,11 @@ $(document).ready(function(){
           $("#cargo").hide();
           $("#dashboardItems").show();
           $("#dashboardItems").empty();
+
+          var x = Math.floor((Math.random()*1000) + 1);
+          var y = Math.floor((Math.random()*100) + 1);
+          var m = "BRV-"+x+"-CUST"+y;
+
           $("#dashboardItems").append(
             "<a href='javascript:void(0)' onclick='closeCustomer();' id='closeCustBtn' style=' position: absolute; text-decoration: none; right: 25px;  font-size: 36px;  margin-left: 50px;'>×</a>"+
             "<center>"+
@@ -60,7 +65,7 @@ $(document).ready(function(){
             "<center>"+
             "<h2><strong>Register Cargo</strong></h2>"+
             "<label><strong>Cargo Id</strong></label><br>"+
-            "<input  style='max-width:50%;text-align: center;' class='form-control' type='text' id='cargoId' name='text' required='required'><br><br>"+
+            "<input  style='max-width:50%;text-align: center;' class='form-control' type='text' id='cargoId' name='text' required='required' readonly><br><br>"+
             "</center>"+
             "<center>"+
             "<label><strong>Cargo Name:</strong></label><br>"+
@@ -80,6 +85,8 @@ $(document).ready(function(){
            "</form>"+
            "</center>"
            );
+          
+           $('#cargoId').val(m); 
         });
 
 
@@ -161,6 +168,7 @@ $(document).ready(function(){
 
       });
 
+
 function editCargo(){
   $(document).ready(function(){
     document.getElementById("mySidebar").style.width = "0";
@@ -168,7 +176,7 @@ function editCargo(){
     document.getElementById("open_btn").style.display="block";
     document.getElementById("open_btn").style.transition="all 0.3s ease";
 
-    let trackNo=document.getElementById("tNo").val;
+    var trackNo=document.getElementById("tNo").val;
     console.log(trackNo);
 
     $("#cust").hide();
@@ -210,3 +218,9 @@ function editCargo(){
   });
 }
 
+// math
+// function myMath() {
+//   var x = Math.floor((Math.random()*1000) + 1);
+//   var y = Math.floor((Math.random()*100) + 1);
+//   document.getElementById("demo").innerHTML = "BRV-"+x+"-CUST"+y;
+// }
