@@ -176,8 +176,10 @@ function editCargo(){
     document.getElementById("open_btn").style.display="block";
     document.getElementById("open_btn").style.transition="all 0.3s ease";
 
-    var trackNo=document.getElementById("tNo").val;
-    console.log(trackNo);
+    var tNo=$("#tNo").html();
+    var cName=$("#cName").html();
+    var custNam=$("#custNam").html();
+
 
     $("#cust").hide();
     $("#cargo").hide();
@@ -215,6 +217,10 @@ function editCargo(){
            "</form>"+
            "</center>"
            );
+
+    $("#cargoId").val($("#cargoId").val()+tNo);
+    $("#cargoName").val($("#cargoName").val()+cName);
+    $("#customerName").val($("#customerName").val()+custNam);
   });
 }
 
